@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="647.0" prefWidth="920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SevenQueensController">
+   <children>
+      <SplitPane fx:id="pane11" layoutX="29.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV11" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane12" layoutX="109.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV12" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane14" layoutX="269.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV14" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane13" layoutX="189.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV13" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane41" layoutX="29.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV41" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane31" layoutX="29.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV31" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane21" layoutX="29.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV21" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane22" layoutX="109.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV22" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane24" layoutX="269.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV24" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane23" layoutX="189.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV23" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane32" layoutX="109.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV32" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane34" layoutX="269.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV34" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane33" layoutX="189.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV33" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane42" layoutX="109.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV42" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane44" layoutX="269.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV44" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane43" layoutX="189.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV43" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane51" layoutX="29.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV51" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane52" layoutX="109.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV52" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane54" layoutX="269.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV54" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane53" layoutX="189.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV53" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane15" layoutX="349.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV15" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane25" layoutX="349.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV25" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane35" layoutX="349.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV35" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane45" layoutX="349.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV45" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane55" layoutX="349.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV55" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane61" layoutX="29.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV61" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane16" layoutX="429.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV16" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane64" layoutX="269.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV64" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane63" layoutX="189.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV63" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane62" layoutX="109.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV62" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane65" layoutX="349.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV65" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane66" layoutX="429.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV66" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane56" layoutX="429.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV56" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane46" layoutX="429.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV46" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane36" layoutX="429.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV36" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane26" layoutX="429.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV26" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane71" layoutX="29.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV71" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/2.png" />
+               </image>
+            </ImageView>
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane67" layoutX="509.0" layoutY="414.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV67" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane57" layoutX="509.0" layoutY="334.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV57" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane47" layoutX="509.0" layoutY="254.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV47" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane37" layoutX="509.0" layoutY="174.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV37" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane27" layoutX="509.0" layoutY="94.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV27" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane17" layoutX="509.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV17" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane77" layoutX="509.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV77" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane76" layoutX="429.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV76" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane75" layoutX="349.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV75" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane74" layoutX="269.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV74" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane73" layoutX="189.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0">
+         <items>
+            <ImageView fx:id="IV73" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <SplitPane fx:id="pane72" layoutX="109.0" layoutY="494.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #382010;">
+         <items>
+            <ImageView fx:id="IV72" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <Button fx:id="stop" layoutX="453.0" layoutY="590.0" mnemonicParsing="false" onAction="#Stop" prefHeight="39.0" prefWidth="138.0" style="-fx-background-color: #b00909;" text="STOP" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="next" layoutX="29.0" layoutY="590.0" mnemonicParsing="false" onAction="#Next" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: #b00909;" text="NEXT POSSIBILITY" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ComboBox fx:id="CB1" layoutX="768.0" layoutY="56.0" prefHeight="36.0" prefWidth="127.0" />
+      <ComboBox fx:id="CB2" layoutX="768.0" layoutY="202.0" prefHeight="36.0" prefWidth="127.0" />
+      <ComboBox fx:id="CB3" layoutX="768.0" layoutY="275.0" prefHeight="36.0" prefWidth="127.0" />
+      <ComboBox fx:id="CB4" layoutX="768.0" layoutY="348.0" prefHeight="36.0" prefWidth="127.0" />
+      <Label fx:id="label12" alignment="BASELINE_LEFT" layoutX="620.0" layoutY="37.0" prefHeight="73.0" prefWidth="116.0" text="Mutation&#10;Chances (%)" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label121" alignment="BASELINE_LEFT" layoutX="620.0" layoutY="110.0" prefHeight="73.0" prefWidth="116.0" text="Unethical&#10;Mutation" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label13" layoutX="620.0" layoutY="183.0" prefHeight="73.0" prefWidth="116.0" text="Selection&#10;Factor" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label14" layoutX="620.0" layoutY="256.0" prefHeight="73.0" prefWidth="116.0" text="Population&#10;Size" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label15" layoutX="620.0" layoutY="329.0" prefHeight="73.0" prefWidth="116.0" text="Number Of&#10;Generations" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="yes" layoutX="768.0" layoutY="138.0" mnemonicParsing="false" onAction="#Yes" prefHeight="17.0" prefWidth="57.0" text="Yes" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="muta" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="no" layoutX="832.0" layoutY="138.0" mnemonicParsing="false" onAction="#No" prefHeight="17.0" prefWidth="57.0" text="No" textFill="WHITE" toggleGroup="$muta">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

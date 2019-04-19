@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainClassController">
+   <children>
+      <ImageView fitHeight="631.0" fitWidth="628.0" layoutX="292.0" layoutY="-1.0">
+         <image>
+            <Image url="@Images/KeqTo3B.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" height="86.0" layoutX="318.0" layoutY="265.0" opacity="0.77" stroke="BLACK" strokeType="INSIDE" width="577.0">
+         <effect>
+            <SepiaTone />
+         </effect></Rectangle>
+      <Label contentDisplay="CENTER" layoutX="338.0" layoutY="277.0" prefHeight="62.0" prefWidth="538.0" text="nQUEENS PROBLEM SOLVER" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Aharoni Bold" size="40.0" />
+         </font>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.5333333333333333" endY="1.0" startX="0.5333333333333333">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#fcfcfc" offset="0.19923371647509563" />
+                  <Stop color="#aba3a3" offset="0.506616107753681" />
+                  <Stop color="WHITE" offset="0.8122605363984663" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="11.0" layoutY="142.0" prefHeight="57.0" prefWidth="267.0" text="Select number of Queens (4-10):">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#d1f7ff" />
+                  <Stop color="#98d8ff" offset="0.5134099616858238" />
+                  <Stop color="#4abaff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="next" layoutX="43.0" layoutY="505.0" mnemonicParsing="false" onAction="#Next" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #b00909;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="exit" layoutX="43.0" layoutY="561.0" mnemonicParsing="false" onAction="#Exit" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #b00909;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="check" layoutX="162.0" layoutY="129.0" prefHeight="25.0" prefWidth="130.0" textFill="RED">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="49.0" prefWidth="219.0" text="Select the Algorithm:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#d1f7ff" />
+                  <Stop color="#98d8ff" offset="0.5134099616858238" />
+                  <Stop color="#4abaff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <RadioButton fx:id="backtrac" layoutX="62.0" layoutY="63.0" mnemonicParsing="false" onAction="#Backtrac" prefHeight="33.0" prefWidth="165.0" text="Back Tracking" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="algo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="genetic" layoutX="62.0" layoutY="96.0" mnemonicParsing="false" onAction="#Genetic" prefHeight="33.0" prefWidth="165.0" text="Genetic Algorithm" textFill="WHITE" toggleGroup="$algo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ten" layoutX="62.0" layoutY="397.0" mnemonicParsing="false" onAction="#Ten" prefHeight="33.0" prefWidth="165.0" text="Ten Queens" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="queen" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="nine" layoutX="62.0" layoutY="364.0" mnemonicParsing="false" onAction="#Nine" prefHeight="33.0" prefWidth="165.0" text="Nine Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="eight" layoutX="62.0" layoutY="331.0" mnemonicParsing="false" onAction="#Eight" prefHeight="33.0" prefWidth="165.0" text="Eight Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="seven" layoutX="62.0" layoutY="298.0" mnemonicParsing="false" onAction="#Seven" prefHeight="33.0" prefWidth="165.0" text="Seven Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="six" layoutX="62.0" layoutY="265.0" mnemonicParsing="false" onAction="#Six" prefHeight="33.0" prefWidth="165.0" text="Six Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="five" layoutX="62.0" layoutY="232.0" mnemonicParsing="false" onAction="#Five" prefHeight="33.0" prefWidth="165.0" text="Five Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="four" layoutX="62.0" layoutY="199.0" mnemonicParsing="false" onAction="#Four" prefHeight="33.0" prefWidth="165.0" text="Four Queens" textFill="WHITE" toggleGroup="$queen">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="check1" layoutX="162.0" layoutY="430.0" prefHeight="25.0" prefWidth="130.0" textFill="RED">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
